@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/images/Vocab_Bee-removebg-preview.png'
 
 const Navbar = () => {
@@ -29,9 +29,9 @@ const Navbar = () => {
       <NavLink to='/about'>About Us</NavLink>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">
+    <Link>
       <img className='w-28' src={logo} alt="" />
-    </a>
+    </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 space-x-10 text-[16px]">
