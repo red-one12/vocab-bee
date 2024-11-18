@@ -1,5 +1,6 @@
 import About from "../components/About";
 import Slider from "../components/Slider";
+import SuccessSection from "../components/SuccessSection";
 
 
 const Home = () => {
@@ -10,6 +11,9 @@ const Home = () => {
       </div>
       <div>
         <About></About>
+      </div>
+      <div>
+        <SuccessSection></SuccessSection>
       </div>
     </div>
   );
