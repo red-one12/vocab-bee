@@ -22,7 +22,9 @@ const MainLayOuts = () => {
 
 
       {/* footer */}
+      <div className="bg-[#1d1b28]">
       <Footer></Footer>
+      </div>
     </div>
   );
 };
