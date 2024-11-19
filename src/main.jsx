@@ -14,6 +14,7 @@ import StartLearning from './pages/StartLearning';
 import Tutorial from './pages/Tutorial';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import AuthProvider from './provider/AuthProvider';
 
 
 
@@ -51,6 +52,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 )

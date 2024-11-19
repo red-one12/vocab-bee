@@ -1,7 +1,10 @@
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/images/Vocab_Bee-removebg-preview.png'
+import { useContext } from 'react';
+import { AuthContext } from '../provider/AuthProvider';
 
 const Navbar = () => {
+  const {user} = useContext(AuthContext);
   return (
     <div className="navbar max-w-7xl m-auto py-5">
   <div className="navbar-start">
@@ -42,6 +45,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
+    <p>{user && user.name}</p>
     <Link to='/login' className="border px-6 py-2 rounded-lg cursor-pointer bg-[#1d1b28] text-white">Login</Link>
   </div>
 </div>
