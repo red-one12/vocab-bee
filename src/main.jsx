@@ -12,6 +12,8 @@ import MainLayOuts from './layOuts/MainLayOuts';
 import Home from './pages/Home';
 import StartLearning from './pages/StartLearning';
 import Tutorial from './pages/Tutorial';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 
 
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
 
     ]
   },
+  {
+    path: '/login',
+    element: <Login></Login>
+  },
+  {
+    path: '/register',
+    element: <Register></Register>
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(

@@ -42,7 +42,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="border px-6 py-2 rounded-lg cursor-pointer bg-[#1d1b28] text-white">Login</a>
+    <Link to='/login' className="border px-6 py-2 rounded-lg cursor-pointer bg-[#1d1b28] text-white">Login</Link>
   </div>
 </div>
   );

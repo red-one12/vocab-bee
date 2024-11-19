@@ -46,7 +46,7 @@ const StartLearning = () => {
       </div>
 
       <div className="text-center">
-        <Link to="/tutorials" className="btn btn-primary">View More</Link>
+        <Link to="/tutorials" className="btn bg-[#456389] text-white">View More</Link>
       </div>
     </div>
   );
