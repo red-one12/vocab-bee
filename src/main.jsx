@@ -20,6 +20,7 @@ import MyProfile from './pages/MyProfile';
 import AboutUs from './pages/AboutUs';
 import Lessons from './pages/Lessons';
 import ErrorPage from './pages/ErrorPage';
+import Profile from './pages/Profile';
 
 
 
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
   {
     path: '/register',
     element: <Register></Register>
+  },
+  {
+    path: '/profile',
+    element: <Profile></Profile>
   }
 ]);
 
