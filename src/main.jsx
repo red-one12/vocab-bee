@@ -50,7 +50,7 @@ const router = createBrowserRouter([
         element: <AboutUs></AboutUs>
       },
       {
-        path: '/lessons',
+        path: '/lessons/:lesson_no',
         element: <Lessons></Lessons>,
         loader: () => fetch('../allWords.json')
       }

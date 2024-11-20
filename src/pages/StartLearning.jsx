@@ -20,7 +20,7 @@ const StartLearning = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {
           lessonNo.map(lesson => (
-            <Link to='/lessons' key={lesson.id} className="p-4 border rounded shadow">
+            <Link to={`/lessons/${lesson.lesson_no}`} key={lesson.id} className="p-4 border rounded shadow">
               <p className="text-xl font-semibold">Lesson {lesson.lesson_no}</p>
             </Link>
           ))
