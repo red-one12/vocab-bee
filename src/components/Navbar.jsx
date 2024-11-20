@@ -5,6 +5,9 @@ import { AuthContext } from '../provider/AuthProvider';
 
 const Navbar = () => {
   const {user} = useContext(AuthContext);
+
+  console.log(user);
+  
   return (
     <div className="navbar max-w-7xl m-auto py-5">
   <div className="navbar-start">
