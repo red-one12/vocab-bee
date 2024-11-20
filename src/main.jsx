@@ -16,6 +16,9 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import AuthProvider from './provider/AuthProvider';
 import { Toaster } from 'react-hot-toast';
+import MyProfile from './pages/MyProfile';
+import AboutUs from './pages/AboutUs';
+import Lessons from './pages/Lessons';
 
 
 
@@ -37,6 +40,19 @@ const router = createBrowserRouter([
       {
         path: '/tutorials',
         element: <Tutorial></Tutorial>
+      },
+      {
+        path: '/myProfile',
+        element: <MyProfile></MyProfile>
+      },
+      {
+        path: '/aboutUs',
+        element: <AboutUs></AboutUs>
+      },
+      {
+        path: '/lessons',
+        element: <Lessons></Lessons>,
+        loader: () => fetch('../allWords.json')
       }
 
     ]
