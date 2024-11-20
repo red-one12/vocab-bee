@@ -19,6 +19,7 @@ import { Toaster } from 'react-hot-toast';
 import MyProfile from './pages/MyProfile';
 import AboutUs from './pages/AboutUs';
 import Lessons from './pages/Lessons';
+import ErrorPage from './pages/ErrorPage';
 
 
 
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayOuts></MainLayOuts>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
