@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup, updateProfile } from "firebase/auth";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../firebase/firebase.init";
@@ -49,12 +49,20 @@ const Register = () => {
     }
     setErrorMessage('');
     console.log(name, email, photoUrl, password);
+
     createNewUser(email, password)
       .then((result) => {
         const user = result.user;
-        setUser(user);
-        console.log(user);
-        navigateToHome('/');
+        updateProfile(user, {
+          displayName: name,
+          photoURL: photoUrl
+        }).then(() => {
+          setUser({ ...user, displayName: name, photoURL: photoUrl });
+          console.log(user);
+          navigateToHome('/');
+        }).catch((error) => {
+          console.log('Profile update error', error);
+        });
       })
       .catch((error) => {
         const errorCode = error.code;
