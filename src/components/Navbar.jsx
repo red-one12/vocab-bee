@@ -69,7 +69,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-10 text-[16px]">
           <NavLink to='/'>Home</NavLink>
-          <NavLink to={user ? '/startLearning' : '/login'}>Start-Learning</NavLink>
+          <NavLink to='/startLearning'>Start-Learning</NavLink>
           <NavLink to={user ? '/tutorials' : '/login'}>Tutorials</NavLink>
           <NavLink to='/aboutUs'>About Us</NavLink>
           {

@@ -1,29 +1,31 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
 
 const StartLearning = () => {
-
   const [lessonNo, setLessonNo] = useState([]);
+  const { user } = useContext(AuthContext);
 
   useEffect(() => {
     fetch('lessonNumber.json')
       .then(res => res.json())
-      .then(data => setLessonNo(data))
+      .then(data => setLessonNo(data));
   }, []);
-
 
   return (
     <div className="lessons-page px-2 py-8 max-w-7xl m-auto">
       <h1 className="text-3xl font-bold mb-6">Let's Learn!</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {
-          lessonNo.map(lesson => (
-            <Link to={`/lessons/${lesson.lesson_no}`} key={lesson.id} className="p-4 border rounded shadow hover:bg-[#a3c3d8] duration-200">
-              <p className="text-xl font-semibold">Lesson {lesson.lesson_no}</p>
-            </Link>
-          ))
-        }
+        {lessonNo.map((lesson) => (
+          <Link
+            to={user ? `/lessons/${lesson.lesson_no}` : '/login'}
+            key={lesson.id}
+            className="p-4 border rounded shadow hover:bg-[#a3c3d8] duration-200"
+          >
+            <p className="text-xl font-semibold">Lesson {lesson.lesson_no}</p>
+          </Link>
+        ))}
       </div>
 
       <div className="tutorial-section my-12">
