@@ -84,7 +84,7 @@ const Navbar = () => {
           <>
             <span className="mr-2 font-bold">{user.displayName}</span>
             <img className='w-10 h-10 rounded-full mr-2' src={user.photoURL} alt="" />
-            <button onClick={handleLogout} className="border px-6 py-2 rounded-lg cursor-pointer bg-[#1d1b28] text-white">Logout</button>
+            <Link to='/' onClick={handleLogout} className="border px-6 py-2 rounded-lg cursor-pointer bg-[#1d1b28] text-white">Logout</Link>
           </>
         ) : (
           <Link to='/login' className="border px-6 py-2 rounded-lg cursor-pointer bg-[#1d1b28] text-white">Login</Link>
