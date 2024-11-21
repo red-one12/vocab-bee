@@ -2,7 +2,7 @@
 
 const HowToLearn = () => {
   return (
-    <div className="how-to-learn pt-20">
+    <div className="how-to-learn pt-20 px-2">
       <h2 className="text-2xl font-bold mb-4">How Users Can Learn Vocabularies</h2>
       
 

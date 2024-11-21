@@ -11,10 +11,9 @@ const StartLearning = () => {
       .then(data => setLessonNo(data))
   }, []);
 
-  console.log(lessonNo);
 
   return (
-    <div className="lessons-page p-8 max-w-7xl m-auto">
+    <div className="lessons-page px-2 py-8 max-w-7xl m-auto">
       <h1 className="text-3xl font-bold mb-6">Let's Learn!</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -35,7 +34,6 @@ const StartLearning = () => {
             height="315" 
             src="https://www.youtube.com/embed/kJQjXAVEWt0?si=1M0Xbh4Tt5zYVvKl" 
             title="YouTube video player" 
-            frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerPolicy="strict-origin-when-cross-origin" 
             allowFullScreen

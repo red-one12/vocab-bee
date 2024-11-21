@@ -2,7 +2,7 @@
 
 const LanguageFacts = () => {
   return (
-    <div className="language-facts-section pt-28 text-center max-w-7xl m-auto">
+    <div className="language-facts-section pt-28 text-center max-w-7xl m-auto px-2">
     <h2 className="text-6xl text-[#456389] font-bold mb-6">Interesting Facts</h2>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div className="fact-card p-4 border rounded-lg shadow-sm bg-[#d0e2ec]">

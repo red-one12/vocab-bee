@@ -6,8 +6,9 @@ const Footer = () => {
   return (
     <footer className="text-white max-w-7xl m-auto py-8 mt-20">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          {/* Contact Information */}
+        <div className="flex flex-col md:flex-row justify-between">
+        
+
           <div className="mb-4 md:mb-0">
             <h3 className="text-xl font-bold mb-2">Contact Us</h3>
             <p>Email: vocabBee@gmail.com</p>
@@ -15,7 +16,7 @@ const Footer = () => {
             <p>Address: Birulia, Savar, Dhaka</p>
           </div>
 
-          {/* Social Media Links */}
+
           <div className="mb-4 md:mb-0">
             <h3 className="text-xl font-bold mb-2">Follow Us</h3>
             <div className="flex space-x-4">

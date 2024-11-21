@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 
 const SuccessSection = () => {
   return (
-    <div className="success-section max-w-7xl m-auto pt-20">
+    <div className="success-section max-w-7xl m-auto pt-20 px-2">
       <h2 className="text-6xl font-bold mb-6 text-center text-[#456389]">Our Success</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div className="success-item border py-5 rounded-xl bg-[#d0e2ec]">
