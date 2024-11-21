@@ -52,22 +52,33 @@ const Register = () => {
 
     createNewUser(email, password)
       .then((result) => {
+
+
+
         const user = result.user;
         updateProfile(user, {
+
           displayName: name,
           photoURL: photoUrl
         }).then(() => {
           setUser({ ...user, displayName: name, photoURL: photoUrl });
           console.log(user);
+
           navigateToHome('/');
+
         }).catch((error) => {
           console.log('Profile update error', error);
         });
       })
       .catch((error) => {
+
+
         const errorCode = error.code;
         const errorMessage = error.message;
+
+        
         console.log(errorCode, errorMessage);
+
 
         if (errorCode === 'auth/email-already-in-use') {
           toast.error('Email is already in use.');
@@ -78,7 +89,7 @@ const Register = () => {
   };
 
   return (
-    <div className="max-w-7xl m-auto flex flex-col justify-center pt-8">
+    <div className="max-w-7xl m-auto flex flex-col justify-center pt-8 px-2">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-[#456389]">Create An Account</h1>
       </div>

@@ -1,5 +1,6 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { useState } from "react";
+import { HiSpeakerWave } from "react-icons/hi2";
 
 const Lessons = () => {
   const allWord = useLoaderData();
@@ -28,8 +29,12 @@ const Lessons = () => {
     return colorEntry ? colorEntry.color_code : "#fff";
   };
 
-
-
+  const makeSound = (word) => {
+    const utterance = new SpeechSynthesisUtterance(word);
+    window.speechSynthesis.speak(utterance);
+    console.log(word);
+    
+  };
 
   const [modalData, setModalData] = useState(null);
 
@@ -44,7 +49,12 @@ const Lessons = () => {
             className="p-4 border rounded-xl shadow"
             style={{ backgroundColor: getColorCode(lessonNumber) }}
           >
-            <p className="text-2xl font-semibold">{word.word}</p>
+            <div className="flex items-center gap-2">
+              <p className="text-2xl font-semibold">{word.word}</p>
+              <div onClick={() => makeSound(word.word)}>
+                <HiSpeakerWave className="text-xl cursor-pointer" />
+              </div>
+            </div>
             <p><span className="font-bold">Meaning:</span> {word.meaning}</p>
             <p><span className="font-bold">Pronunciation:</span> {word.pronunciation}</p>
             <p><span className="font-bold">Part of Speech:</span> {word.part_of_speech}</p>
@@ -71,7 +81,7 @@ const Lessons = () => {
         </dialog>
       )}
       <div className="text-center pt-16">
-      <Link to='/startLearning' className="btn bg-[#1d1b28] text-white">Back to Lesson</Link>
+        <Link to='/startLearning' className="btn bg-[#1d1b28] text-white">Back to Lesson</Link>
       </div>
     </div>
   );

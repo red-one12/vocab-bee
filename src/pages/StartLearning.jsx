@@ -44,7 +44,7 @@ const StartLearning = () => {
       </div>
 
       <div className="text-center">
-        <Link to="/tutorials" className="btn bg-[#456389] text-white px-4 py-2 rounded">View More</Link>
+      <Link to={user ? '/tutorials' : '/login'} className="btn bg-[#456389] text-white px-4 py-2 rounded">View More</Link>
       </div>
     </div>
   );

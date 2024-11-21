@@ -66,7 +66,7 @@ const Login = () => {
 
 
   return (
-    <div className="max-w-7xl m-auto flex flex-col justify-center pt-8">
+    <div className="max-w-7xl m-auto flex flex-col justify-center pt-8 px-2">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-[#456389]">Welcome Back!</h1>
         <h1 className="text-xl font-bold text-[#456389]">Login</h1>
