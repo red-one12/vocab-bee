@@ -1,5 +1,5 @@
 # VocabBee
-Link of live site:
+Link of live site:https://vocab-bee.netlify.app/
 
 # Purpose
 An online learning platform that helps users learn new languages through interactive lessons and tutorials.
