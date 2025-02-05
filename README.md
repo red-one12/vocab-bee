@@ -13,21 +13,35 @@ VocabBee is an online learning platform designed to help users learn new languag
 
 ## 📌 Features
 
-- **User Authentication**: Login and register with email/password or social login (Google/GitHub).
-- **Book Management**: Browse, add, update, and view books by category.
-- **Borrowing System**: Borrow and return books with automatic quantity updates.
-- **Private Routes**: Restricted pages for logged-in users (e.g., Borrowed Books, Add Book).
-- **Responsive Design**: Mobile-friendly layout.
-- **Notifications**: Toast messages for actions like adding books or borrowing.
-- **Book Filters**: Filter books by availability and toggle views (card or table).
+### 1. **User Authentication**
+- Secure login and registration using Firebase authentication.
+- Users can sign up, log in, and manage their credentials safely.
+
+### 2. **Interactive Lessons**
+- Access to various language lessons categorized by difficulty levels.
+- Users can easily navigate through beginner, intermediate, and advanced lessons.
+
+### 3. **Profile Management**
+- Users can view and update their profile information.
+- Features include updating display name and profile picture.
+
+### 4. **Responsive Design**
+- Mobile-friendly design that adapts to different screen sizes.
+- Seamless user experience across various devices (desktop, tablet, mobile).
+
+### 5. **Tutorial Videos**
+- Embedded YouTube videos to help users learn pronunciation and other language skills.
+- Curated content for practical language learning.
+
+### 6. **AOS Animations**
+- Smooth scroll animations powered by AOS (Animate on Scroll).
+- Engaging and interactive UI that enhances the overall user experience.
 
 ---
 
 ## 🛠 Tech Stack
 
-**Frontend**: React, Tailwind CSS  
-**Backend**: Node.js, Express  
-**Database**: MongoDB  
+**Frontend**: React, Tailwind CSS, NPM  
 **Authentication**: Firebase (Email/Google sign-in)  
 
 ---
@@ -40,13 +54,6 @@ VocabBee is an online learning platform designed to help users learn new languag
 - Tailwind CSS
 - Firebase Authentication
 
-### **Backend**
-- Node.js
-- Express
-- MongoDB
-- Mongoose
-- Firebase Admin SDK
-
 ---
 
 ## 🏗 Installation & Setup
@@ -55,5 +62,5 @@ Follow these steps to run the project locally:
 
 ### 1️⃣ Clone the repository
 ```sh
-git clone https://github.com/your-repo/lms.git
-cd lms
+git clone https://github.com/your-repo/vocabbee.git
+cd vocabbee
