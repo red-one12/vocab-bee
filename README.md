@@ -2,7 +2,7 @@
 
 
 
-![image alt](https://github.com/red-one12/LMS-client/blob/a929b3768a185faabacd254256909a066a681d72/Screenshot%20(8).png)
+![image alt](https://github.com/red-one12/vocab-bee/blob/6d250d06edd31a04d641fd4bb78a2c81479bae27/Screenshot%20(10).png)
 
 
 VocabBee is an online learning platform designed to help users learn new languages through interactive lessons, video tutorials, and quizzes. The platform aims to make language learning fun and accessible for everyone.
